@@ -1,0 +1,102 @@
+/*------------------Cards CSS------------------*/
+
+
+.container
+{
+    width: 1000px;
+    margin-top: 10%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .card
+{
+    background: white;
+    position: relative;
+    border: none;
+}
+
+.container .arrow{
+    margin-top: 12%;
+    background: transparent;
+}
+
+.container .card .face
+{
+    width: 300px;
+    height: 250px;
+    transition: 0.5s;
+}
+
+.container .card .face.face1
+{
+    position: relative;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.container .card .face1 .content
+{
+    transition: 0.5s;
+}
+
+.container .card .face1 .content h3
+{
+    margin: 10px 0 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+.container .card .face2
+{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.container .card .face2 .content p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face2 .content a
+{
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+@media screen and (max-width:768px) {
+    body{
+        overflow: hidden;
+    }
+
+    .container
+    {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .container .card .face
+    {
+        width: 300px;
+        height: 100px;
+        transition: 0.5s;
+    }
+}
